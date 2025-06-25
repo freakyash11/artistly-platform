@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "name": "Singers"
+  },
+  {
+    "id": 2,
+    "name": "Dancers"
+  },
+  {
+    "id": 3,
+    "name": "Speakers"
+  },
+  {
+    "id": 4,
+    "name": "DJs"
+  }
+]
