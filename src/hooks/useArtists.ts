@@ -20,8 +20,12 @@ export function useArtists() {
       try {
         setLoading(true);
         setError(null);
-
-        const response = await fetch('/data/artist.json'); // Adjust the path as necessary
+        // Note: This project uses Next.js App Router, which deprecates `getStaticProps` and 
+        // `getServerSideProps` for data fetching within components.
+        // Instead, data fetching in the App Router is typically handled directly within 
+        // React Server Components (RSC) using `fetch` or by using custom hooks/libraries 
+        // that leverage RSC capabilities for server-side data retrieval.
+        const response = await fetch('/data/artist.json'); 
 
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);

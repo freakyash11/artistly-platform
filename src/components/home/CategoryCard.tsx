@@ -34,6 +34,7 @@ const CategoryCard: React.FC<CategoryCardProps> = ({ category, className = "" })
 
   const handleCategoryClick = useCallback(() => {
     // Navigate to artists page with category filter
+    // Not functional just for demonstration
     router.push(`/artists?category=${category.name.toLowerCase()}`);
   }, [category.name, router]);
 

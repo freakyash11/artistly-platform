@@ -19,10 +19,10 @@ export default function Example() {
         <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8">
           <div className="flex lg:flex-1">
             <Link href="/" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
+              <span className="sr-only">Artistly</span>
               <img
                 alt=""
-                src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600"
+                src="https://previews.123rf.com/images/sanek13744/sanek137441805/sanek13744180500374/101235902-music-note-icon-in-flat-style-sound-media-illustration-on-isolated-transparent-background-audio.jpg"
                 className="h-8 w-auto"
               />
             </Link>
@@ -51,10 +51,10 @@ export default function Example() {
           <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
               <a href="#" className="-m-1.5 p-1.5">
-                <span className="sr-only">Your Company</span>
+                <span className="sr-only">Artistly</span>
                 <img
                   alt=""
-                  src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600"
+                  src="https://previews.123rf.com/images/sanek13744/sanek137441805/sanek13744180500374/101235902-music-note-icon-in-flat-style-sound-media-illustration-on-isolated-transparent-background-audio.jpg"
                   className="h-8 w-auto"
                 />
               </a>

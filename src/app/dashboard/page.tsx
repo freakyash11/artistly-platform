@@ -8,7 +8,11 @@ const ManagerDashboardPage: React.FC = () => {
   const [artists, setArtists] = useState<Artist[]>([]);
   const [loading, setLoading]   = useState(true);
   const [error, setError]       = useState<string | null>(null);
-
+  // Note: This project uses Next.js App Router, which deprecates `getStaticProps` and 
+  // `getServerSideProps` for data fetching within components.
+  // Instead, data fetching in the App Router is typically handled directly within 
+  // React Server Components (RSC) using `fetch` or by using custom hooks/libraries 
+  // that leverage RSC capabilities for server-side data retrieval.
   useEffect(() => {
     fetch('/data/artist.json')
       .then(res => {
