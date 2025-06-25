@@ -26,15 +26,10 @@ interface ApiResponse {
 
 export default function OnboardingPage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submissionResult, setSubmissionResult] = useState<{
-    type: 'success' | 'error' | null;
-    message: string;
-  }>({ type: null, message: '' });
-
   // Custom submit handler for the form
   const handleFormSubmit = async (data: ArtistFormData) => {
     setIsSubmitting(true);
-    setSubmissionResult({ type: null, message: '' });
+
     
     try {
       // Prepare form data for API submission
@@ -59,13 +54,6 @@ export default function OnboardingPage() {
       }
 
       if (result.success) {
-        setSubmissionResult({
-          type: 'success',
-          message: `Application submitted successfully!`,
-        });
-
-
-
         // Show success toast notification
         console.log('✅ Application submitted successfully:', result.data);
         
@@ -76,19 +64,14 @@ export default function OnboardingPage() {
     } catch (error) {
       console.error('❌ Error submitting application:', error);
       
-      setSubmissionResult({
-        type: 'error',
-        message: error instanceof Error ? error.message : 'An unexpected error occurred. Please try again.'
-      });
+      
 
     } finally {
       setIsSubmitting(false);
     }
   };
 
-  const dismissAlert = () => {
-    setSubmissionResult({ type: null, message: '' });
-  };
+  
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50">
