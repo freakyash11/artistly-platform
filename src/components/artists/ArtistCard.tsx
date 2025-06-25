@@ -14,10 +14,6 @@ interface ArtistCardProps {
 }
 
 export default function ArtistCard({ artist }: ArtistCardProps) {
-  const handleQuoteRequest = () => {
-    // Handle quote request logic here
-    console.log(`Quote requested for ${artist.name}`);
-  };
 
   return (
     <Card className="h-full flex flex-col hover:shadow-lg transition-shadow duration-300">

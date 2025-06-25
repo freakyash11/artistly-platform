@@ -2,8 +2,6 @@
 
 import { useState } from 'react';
 import OnboardingForm from '@/components/onboard/OnboardingForm';
-import { Alert, AlertDescription } from '@/components/ui/alert';
-import { CheckCircle, AlertTriangle, XCircle } from 'lucide-react';
 
 // Type definition for form data
 interface ArtistFormData {

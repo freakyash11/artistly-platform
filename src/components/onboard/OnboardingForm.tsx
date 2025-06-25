@@ -160,7 +160,7 @@ export default function OnboardingForm({ onSubmit, isLoading = false }: Onboardi
           <CheckCircle className="mx-auto h-16 w-16 text-green-500 mb-4" />
           <h2 className="text-2xl font-bold text-green-700 mb-2">Application Submitted!</h2>
           <p className="text-gray-600 mb-4">
-            Thank you for your interest in joining our platform. We'll review your application and get back to you soon.
+            Thank you for your interest in joining our platform. We&apos;ll review your application and get back to you soon.
           </p>
           <Button 
             onClick={handleNewApplication} 
